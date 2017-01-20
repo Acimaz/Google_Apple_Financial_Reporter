@@ -63,4 +63,4 @@ rewritten to work on **AWS Lambda**. You if you are looking for that, just chang
 ## Information about me
  Im not a python developer. Im a C# and Unity3D Software Developer working at Kaasa health GmbH in Düsseldorf, Germany and we try to monitor our financial 
  stats in various ways. One of it is using this tool to load reports form apple/google.
- If there is something i can correct (even if its only visual for better looking code) are welcome! :)
+ If there is something i can correct (even if its only visual for better looking code) you are welcome! :)
