@@ -26,10 +26,10 @@ rewritten to work on **AWS Lambda**. You if you are looking for that, just chang
  
  Here is a list of variables you need to change for sourself and corresponding python script names where you can find them:
  ```text
- client_email in **GoogleReporter.py** - Example: 'testDev@somethingYouCanSeeOnYourServiceAccountOnly.iam.gserviceaccount.com'
- json_file  in **GoogleReporter.py** - Example: 'theNameToYourPrivateJasonKeyOfYourServiceAccount.json' (you can download/create this key via the 3 dotted menu on your service account on the Service Accounts page. Just drop the file into the same folder as the other .py scripts)
- cloud_storage_bucket  in **GoogleReporter.py** - Example: 'pubsite_prod_rev_YOURBUCKET_ID' (you can find this id when you go to your Google dev console and click on your app and then financials and then try to download something. On the next page there are URI's listed like "gs://pubsite_prod_rev"...)
- report_to_download in **GoogleReporter.py** - Example 'financial-stats/subscriptions/NameOfFileYouWantToLoad_' (dont forget the underscore, the rest of the filename is added dynamically according to the date you want the reports from)
+ client_email in **GoogleReports.py** - Example: 'testDev@somethingYouCanSeeOnYourServiceAccountOnly.iam.gserviceaccount.com'
+ json_file  in **GoogleReports.py** - Example: 'theNameToYourPrivateJasonKeyOfYourServiceAccount.json' (you can download/create this key via the 3 dotted menu on your service account on the Service Accounts page. Just drop the file into the same folder as the other .py scripts)
+ cloud_storage_bucket  in **GoogleReports.py** - Example: 'pubsite_prod_rev_YOURBUCKET_ID' (you can find this id when you go to your Google dev console and click on your app and then financials and then try to download something. On the next page there are URI's listed like "gs://pubsite_prod_rev"...)
+ report_to_download in **GoogleReports.py** - Example 'financial-stats/subscriptions/NameOfFileYouWantToLoad_' (dont forget the underscore, the rest of the filename is added dynamically according to the date you want the reports from)
  vendorId in **AppleReporter** - Example: 41064164 (you can get this number in starting the ApplePythonReporter.py made by fedoco as standalone with the needed parameters. For more info on this check out his Github page on https://github.com/fedoco/itc-reporter)
  userId in **AppleReporter** -  Example: 'itunesconnect@awesome.com'
  password in **AppleReporter** -  Example: 'MyAwesomePassword'
