@@ -97,11 +97,11 @@ class ApplePythonReport:
             print 'Subscription: There were no sales for the date specified'
 
     def CleanUp(self, date):
-        if os.path.isfile('Subscription_'+self.vendorId+'_' + date + '.txt'):
-            os.remove('Subscription_'+self.vendorId+'_' + date + '.txt')
+        if os.path.isfile('Subscription_'+self.vendorId.__str__() +'_' + date + '.txt'):
+            os.remove('Subscription_'+self.vendorId.__str__()+'_' + date + '.txt')
         else:
-            print 'Subscription_'+self.vendorId+'_' + date + '.txt doesnt exist: Maybe there were no Sales at the specified date'
-        if os.path.isfile('Subscription_Event_'+self.vendorId+'_' + date + '.txt'):
-            os.remove('Subscription_Event_'+self.vendorId+'_' + date + '.txt')
+            print 'Subscription_'+self.vendorId.__str__()+'_' + date + '.txt doesnt exist: Maybe there were no Sales at the specified date'
+        if os.path.isfile('Subscription_Event_'+self.vendorId.__str__()+'_' + date + '.txt'):
+            os.remove('Subscription_Event_'+self.vendorId.__str__()+'_' + date + '.txt')
         else:
-            print 'Subscription_Event_'+self.vendorId+'_' + date + '.txt doesnt exist: Maybe there were no Sales at the specified date'
+            print 'Subscription_Event_'+self.vendorId.__str__()+'_' + date + '.txt doesnt exist: Maybe there were no Sales at the specified date'
